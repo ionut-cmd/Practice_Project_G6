@@ -1,0 +1,15 @@
+current directory: /Users/taimoorrizwan/Desktop/SEP ^/Practice_Project_G6/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+/Users/taimoorrizwan/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/taimoorrizwan/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20220217-25471-l3oo6t.rb extconf.rb
+creating Makefile
+
+current directory: /Users/taimoorrizwan/Desktop/SEP ^/Practice_Project_G6/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/taimoorrizwan/Desktop/SEP ^/Practice_Project_G6/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/taimoorrizwan/Desktop/SEP ^/Practice_Project_G6/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.10.3/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20220217-25471-63q5q7/bootsnap
