@@ -1,3 +1,19 @@
+%p#demo
+:javascript
+  var x = document.getElementById("demo");
+  
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+      x.innerHTML = "Geolocation is not supported on your browser. Please Change Browsers!";
+    }
+  }
+  
+  function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+  }
 .container.mt-5
   .row.d-flex.justify-content-center
     .col-md-7
@@ -8,8 +24,10 @@
           %span.bg-secondary.p-1.px-4.rounded.text-white Pro
           %h5.mt-2.mb-0 Taimoor Rizwan
           %span SEP Group Member
-          .px-4.mt-1
+          .px-4.mt-1 
             %p.fonts Taimoor Rizwan draws from his life story when writing about the experiences of migrant workers. His first series of poems, My Father's Hands, appeared in The New Yorker and describes how his family crossed the Texas border to give Manuel and his brothers a better life. After receiving his Master's in Fine Arts from Columbia University, Manuel wrote three nonfiction novels about his experiences, including Under the Streaming Sun, which earned the National Prize for Arts and Sciences in 2008. Manuel is currently working on a collection of fictional short stories to be published in early 2021.
+            
           .buttons
-            %button.btn.btn-outline-primary.px-4 Message
-            %button.btn.btn-primary.px-4.ms-3 Contact
+            %button.btn.btn-outline-primary.px-4{:onclick => "getLocation()"} Current Location
+
+
